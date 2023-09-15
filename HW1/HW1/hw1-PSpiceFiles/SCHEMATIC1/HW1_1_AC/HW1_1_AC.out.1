@@ -1,7 +1,7 @@
+
+**** 09/15/23 12:41:04 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
-**** 09/15/23 11:36:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
-
- ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-PSpiceFiles\SCHEMATIC1\HW1_1_AC.sim ] 
+ ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -23,7 +23,9 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.AC DEC 10 1k 1G
+.AC DEC 10 0 1G
+-----------$
+ERROR(ORPSIM-16103): Invalid value
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -83,19 +85,9 @@ M_M4         VO N00411 0 N00580 NMOS0P5
 + PS=5.25E-6      
 + M=1
 C_CL         0 VO  1p  TC=0,0 
-V_Vin+         N01229 0 DC 1.65Vdc AC 1Vac 
-V_Vin-         N01180 0 DC 1.65Vdc AC -1Vac 
+V_Vin+         N01229 0 DC 1.65Vdc AC 0.5749020786Vac 
+V_Vin-         N01180 0 DC 1.65Vdc AC -0.5749020786Vac 
 
 **** RESUMING HW1_1_AC.cir ****
 .END
-
-WARNING(ORPSIM-15223): Library file "C:\Program Files (x86)\OUP\sedra_lib.lib" has changed since index file sedra_lib.ind was created.
-
-WARNING(ORPSIM-15227): The timestamp changed from Tue Oct 08 10:04:04 2019 to Thu Aug 24 09:15:10 2023.
-
-INFO(ORPSIM-15422): Making new index file sedra_lib.ind for library file sedra_lib.lib.
-
-ERROR(ORPSIM-15065): Unable to open index file C:\Program Files (x86)\OUP\sedra_lib.ind.
-
-ERROR(ORPSIM-15107): Unable to make index for library file "C:\Program Files (x86)\OUP\sedra_lib.lib".
 
