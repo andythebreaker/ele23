@@ -30,6 +30,11 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
     (VAC
       (FullPartName "VAC.Normal")
       (LibraryName
@@ -47,11 +52,6 @@
     (PMOS0P5_BODY
       (FullPartName "PMOS0P5_BODY.Normal")
       (LibraryName "C:\PROGRAM FILES (X86)\OUP\SEDRA_LIB.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "C:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (0
       (LibraryName
@@ -78,7 +78,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 1608 52 511")
-        (Scroll "0 690")
+        (Scroll "0 529")
         (Zoom "232")
         (Occurrence "/"))
       (Path "G:\ANDY\23ME\HW1\HW1\HW1\HW1.DSN")

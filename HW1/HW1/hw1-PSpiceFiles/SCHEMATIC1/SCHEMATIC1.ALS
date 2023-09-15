@@ -10,5 +10,6 @@ M_M4            M4(d=VO g=N00411 s=0 b=0 ) CN @HW1.SCHEMATIC1(sch_1):INS316@SEDR
 C_CL            CL(1=0 2=VO ) CN @HW1.SCHEMATIC1(sch_1):INS355@ANALOG.C.Normal(chips)
 V_Vin+          Vin+(+=N01229 -=0 ) CN @HW1.SCHEMATIC1(sch_1):INS1140@SOURCE.VAC.Normal(chips)
 V_Vin-          Vin-(+=N01180 -=0 ) CN @HW1.SCHEMATIC1(sch_1):INS1160@SOURCE.VAC.Normal(chips)
+R_RL            RL(1=0 2=VO ) CN @HW1.SCHEMATIC1(sch_1):INS5480@ANALOG.R.Normal(chips)
 _    _(Vo=VO)
 .ENDALIASES
