@@ -11,11 +11,12 @@
   (Folder "Outputs")
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles")
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
     (Folder "Model Libraries"
-      (Sort User))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
+      (File "C:\Program Files (x86)\OUP\sedra_lib.lib"
+        (DisplayName "C:\Program Files (x86)\OUP\sedra_lib.lib")
+        (Type "PSpiceLibrary"))
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector)
