@@ -1,5 +1,5 @@
 
-**** 09/16/23 07:25:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/16/23 07:50:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -42,7 +42,7 @@ M_M1         N00411 N01229 N00662 N00662 PMOS0P5
 + PD=5.25e-6  
 + PS=5.25E-6      
 + M=1
-M_M2         VO N01180 N00662 N00662 PMOS0P5  
+M_M2         VO N06387 N00662 N00662 PMOS0P5  
 + L=0.5u  
 + W=12u  
 + AD=1.72E-12  
@@ -84,7 +84,8 @@ M_M4         VO N00411 0 0 NMOS0P5
 + M=1
 C_CL         0 VO  1p  TC=0,0 
 V_Vin+         N01229 0 DC 1.65Vdc AC 1Vac 
-V_Vin-         N01180 0 DC 1.65Vdc AC 0Vac 
+R_R1         N06387 0  175k TC=0,0 
+R_R2         N06387 VO  25k TC=0,0 
 R_RL         0 VO  200k TC=0,0 
 
 **** RESUMING HW1_1_AC.cir ****
@@ -92,7 +93,7 @@ R_RL         0 VO  200k TC=0,0
 
 WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and might cause non-convergence
 
-**** 09/16/23 07:25:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/16/23 07:50:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -142,7 +143,7 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
 
 WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and might cause non-convergence
 
-**** 09/16/23 07:25:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/16/23 07:50:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -157,9 +158,9 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   VO)     .4084  (N00411)     .8045 (N00662)    2.5579 (N00700)    3.3000     
+(   VO)    1.8164  (N00411)     .7798 (N00662)    2.5323 (N00700)    3.3000     
 
-(N00725)    2.1322 (N01180)    1.6500 (N01229)    1.6500 
+(N00725)    2.1322 (N01229)    1.6500 (N06387)    1.5894 
 
 
 
@@ -167,17 +168,16 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_VDD       -5.833E-05
+    V_VDD       -5.852E-05
     V_Vin+       0.000E+00
-    V_Vin-       0.000E+00
 
-    TOTAL POWER DISSIPATION   1.92E-04  WATTS
+    TOTAL POWER DISSIPATION   1.93E-04  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 09/16/23 07:25:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/16/23 07:50:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
