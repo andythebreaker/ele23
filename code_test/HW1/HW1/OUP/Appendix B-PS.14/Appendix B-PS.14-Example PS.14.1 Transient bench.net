@@ -1,0 +1,44 @@
+* source CHAPTER 11
+R_Rt3         VEE2 N11110  {Rt3}  
+V_Vsupply1         0 VEE2 {VEE2}
+Q_G1_QNOR         0 G1_N22108 NOR1 QECL
+Q_G1_Q1         0 G1_N21790 R QECL
+Q_G1_QOR         0 G1_N22118 N10868 QECL
+Q_G1_Q2         G1_N21790 G1_N21790 G1_N21876 QECL
+R_G1_Ra         VEE1 A1  {Ra}  
+Q_G1_Q3         G1_N21876 G1_N21876 G1_N219280 QECL
+R_G1_{R1}         G1_N21790 0  {R1}  
+R_G1_Rc1         G1_N22108 0  {Rc1}  
+R_G1_R3         VEE1 R  {R3}  
+Q_G1_QA         G1_N22108 A1 G1_N22254 QECL
+R_G1_Rc2         G1_N22118 0  {Rc2}  
+R_G1_Rb         VEE1 VEE1  {Rb}  
+Q_G1_QB         G1_N22108 VEE1 G1_N22254 QECL
+R_G1_Re         VEE1 G1_N22254  {Re}  
+Q_G1_QR         G1_N22118 R G1_N22254 QECL
+R_G1_R2         VEE1 G1_N219280  {R2}  
+V_Vsupply         0 VEE1 {VEE1}
+Q_G2_QNOR         0 G2_N22108 NOR2 QECL
+Q_G2_Q1         0 G2_N21790 R QECL
+Q_G2_QOR         0 G2_N22118 N11110 QECL
+Q_G2_Q2         G2_N21790 G2_N21790 G2_N21876 QECL
+R_G2_Ra         VEE1 A2  {Ra}  
+Q_G2_Q3         G2_N21876 G2_N21876 G2_N219280 QECL
+R_G2_{R1}         G2_N21790 0  {R1}  
+R_G2_Rc1         G2_N22108 0  {Rc1}  
+R_G2_R3         VEE1 R  {R3}  
+Q_G2_QA         G2_N22108 A2 G2_N22254 QECL
+R_G2_Rc2         G2_N22118 0  {Rc2}  
+R_G2_Rb         VEE1 VEE1  {Rb}  
+Q_G2_QB         G2_N22108 VEE1 G2_N22254 QECL
+R_G2_Re         VEE1 G2_N22254  {Re}  
+Q_G2_QR         G2_N22118 R G2_N22254 QECL
+R_G2_R2         VEE1 G2_N219280  {R2}  
+T_T1         NOR1 0 A2 0 Z0={Z0} TD=10n  
+V_V4         A1 0  
++PULSE -1.77 -0.884 2n 1n 1n 1u 2u
+R_Rt1         VEE2 N10868  {Rt1}  
+R_Rt2         VEE2 A2  {Rt2}  
+R_Rt4         VEE2 NOR2  {Rt4}  
+.PARAM  Rt3=50 Rt4=50 VEE=5.2 R1=907 Re=779 R2=4.98K R3=6.1K Z0=50 VEE1=5.2
++  VEE2=2 Ra=50K Rc1=220 Rt1=50 Rb=50K Rt2=50 Rc2=245

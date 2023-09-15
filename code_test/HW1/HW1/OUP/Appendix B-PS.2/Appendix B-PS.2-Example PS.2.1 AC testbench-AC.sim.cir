@@ -1,0 +1,17 @@
+** Profile: "Example 2.8 AC testbench-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 2\chapter 2-example 2.8 ac testbench-ac.sim ] 
+
+** Creating circuit file "chapter 2-example 2.8 ac testbench-ac.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 25 0.1 10E6
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 2-Example 2.8 AC testbench.net" 
+
+
+.END

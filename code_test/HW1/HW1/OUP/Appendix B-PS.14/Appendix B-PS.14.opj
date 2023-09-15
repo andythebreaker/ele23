@@ -1,0 +1,130 @@
+(ExpressProject "Appendix B-PS.14"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (NoModify)
+    (File ".\Appendix B-PS.14.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Folder "Library"
+      (File "..\sedra_lib.olb"
+        (DisplayName "..\sedra_lib.olb")
+        (Type "Schematic Library")))
+    (RootChangedForceReNetlist "x")
+    (PSPICE_DoNot_Show_WarningDlg "TRUE"))
+  (Folder "Outputs"
+    (File
+       ".\appendix b-ps.14-pspicefiles\example ps.14.1 static\example ps.14.1 static.net"
+      (Type "Report"))
+    (File
+       ".\appendix b-ps.14-pspicefiles\example ps.14.1 dynamic\example ps.14.1 dynamic.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (File "..\sedra_lib.lib"
+        (DisplayName "..\sedra_lib.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.14-pspicefiles\example ps.14.1 dynamic\bias.sim"
+        (DisplayName "Example PS.14.1 Dynamic-bias")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\appendix b-ps.14-pspicefiles\example ps.14.1 dynamic\transient.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.14-pspicefiles\example ps.14.1 dynamic\transient.sim"
+        (DisplayName "Example PS.14.1 Dynamic-transient")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.14-pspicefiles\example ps.14.1 static\bias.sim"
+        (DisplayName "Example PS.14.1 Static-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.14-pspicefiles\example ps.14.1 static\dc sweep.sim"
+        (DisplayName "Example PS.14.1 Static-DC sweep")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPWL
+      (FullPartName "VPWL.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (T
+      (FullPartName "T.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (AD549K
+      (FullPartName "AD549K.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\OPA.OLB")
+      (DeviceIndex "0"))
+    (Q2N3904
+      (FullPartName "Q2N3904.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (QECL
+      (FullPartName "QECL.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (Q_ECL
+      (FullPartName "Q_ECL.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 11 485 31 615"))
+      (Tab 0)))
+  (MPSSessionName "Behrooz"))

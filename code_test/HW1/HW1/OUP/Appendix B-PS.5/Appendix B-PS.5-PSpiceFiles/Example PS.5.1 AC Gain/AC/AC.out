@@ -1,0 +1,190 @@
+
+**** 10/03/03 15:03:03 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 4.14 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER 4\chapt
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "chapter 4-example 4.14 ac gain-ac.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 25 0.0001 1E10
+.STEP PARAM CS LIST 1E-15 10u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 4-Example 4.14 AC Gain.net" 
+
+
+
+**** INCLUDING "chapter 4-Example 4.14 AC Gain.net" ****
+* source CHAPTER 4
+R_R16         0 N178098  {RS}  
+C_C6         0 N178098  {CS}  
+V_V3         IN 0 DC 0Vdc AC 1Vac 
+R_R12         N178004 VDD  {RD}  
+C_C5         N177899 N177754  {CCI}  
+R_R11         N177754 VDD  {RG1}  
+R_R15         0 N177754  {RG2}  
+C_C4         N178004 OUT  {CCO}  
+R_R13         0 OUT  {RL}  
+V_V1         VDD 0 {VDD}
+R_R14         IN N177899  {Rsig}  
+M_M2         N178004 N177754 N178098 N178098 NMOS0P5  
++ L={L}  
++ W={W}  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M=1
+.PARAM  RS=630 VDD=3.3 W=22u RD=4.2K CCI=10u L=0.6u RG1=2E6 RG2=1.3E6 RL=50K
++  CCO=10u Rsig=10K CS=10u
+
+**** RESUMING "chapter 4-example 4.14 ac gain-ac.sim.cir" ****
+.END
+
+**** 10/03/03 15:03:03 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 4.14 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER 4\chapt
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOS0P5         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   80.000000E-09 
+         VTO     .7          
+          KP  167.204900E-06 
+       GAMMA     .5          
+         PHI     .8          
+      LAMBDA    1.000000E-03 
+          IS   10.000000E-15 
+          JS   10.000000E-09 
+          PB     .9          
+        PBSW     .9          
+          CJ  570.000000E-06 
+        CJSW  120.000000E-12 
+        MJSW     .4          
+        CGSO  400.000000E-12 
+        CGDO  400.000000E-12 
+        CGBO  380.000000E-12 
+         TOX    9.500000E-09 
+          XJ    0            
+          UO  460            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+**** 10/03/03 15:03:03 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 4.14 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER 4\chapt
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CS =    1.0000E-15
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (  VDD)    3.3000  (N177754)    1.3000    
+
+(N177899)    0.0000                   (N178004)    1.4581                       
+
+(N178098)     .2763                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V1        -4.396E-04
+
+    TOTAL POWER DISSIPATION   1.45E-03  WATTS
+
+
+**** 10/03/03 15:03:03 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 4.14 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER 4\chapt
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM CS =   10.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (  VDD)    3.3000  (N177754)    1.3000    
+
+(N177899)    0.0000                   (N178004)    1.4581                       
+
+(N178098)     .2763                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V1        -4.396E-04
+
+    TOTAL POWER DISSIPATION   1.45E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/03/03 15:03:03 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 4.14 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER 4\chapt
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM CS =   10.0000E-06
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .17
+

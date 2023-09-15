@@ -1,0 +1,57 @@
+
+**** 10/01/03 21:58:25 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 10.5-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 10\chap
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "chapter 10-Example 10.5-Transient.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 14n 0 0.2p 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 10-Example 10.5.net" 
+
+
+
+**** INCLUDING "chapter 10-Example 10.5.net" ****
+* source CHAPTER 10
+M_M1         OUT IN VDD VDD PMOS0P5  
++ L=0.5u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={MP}
+C_C10         0 OUT  {CL}  
+V_Vsupply         VDD 0 {VDD}
+V_Vin         IN 0  
++PULSE 0 {VDD} 2n 1p 1p 6n 12n
+M_M2         OUT IN 0 0 NMOS0P5  
++ L=0.5u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={MN}
+.PARAM  MN=1 VDD=3.3 MP=1 CL=0.5p
+
+**** RESUMING "chapter 10-Example 10.5-Transient.sim.cir" ****
+.END
+
+ERROR -- Model PMOS0P5 used by M_M1 is undefined
+ERROR -- Model NMOS0P5 used by M_M2 is undefined

@@ -1,0 +1,17 @@
+** Profile: "Wien-Bridge-tets"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 13\chapter 13-Wien-Bridge-tets.sim ] 
+
+** Creating circuit file "chapter 13-Wien-Bridge-tets.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 13-Wien-Bridge.net" 
+
+
+.END

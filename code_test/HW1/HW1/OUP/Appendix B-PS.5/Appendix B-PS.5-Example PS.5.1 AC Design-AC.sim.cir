@@ -1,0 +1,19 @@
+** Profile: "Example 4.14 AC Design-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 4\chapter 4-Example 4.14 AC Design-AC.sim ] 
+
+** Creating circuit file "chapter 4-Example 4.14 AC Design-AC.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 25 0.0001 1E10
+.STEP PARAM CS LIST 1E-15 10u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 4-Example 4.14 AC Design.net" 
+
+
+.END

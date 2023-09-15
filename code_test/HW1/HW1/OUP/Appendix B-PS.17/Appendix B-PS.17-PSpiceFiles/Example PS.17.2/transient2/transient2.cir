@@ -1,0 +1,19 @@
+** Profile: "Example PS.17.2-transient2"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.17\appendix b-ps.17-example ps.17.2-transient2.sim ] 
+
+** Creating circuit file "appendix b-ps.17-example ps.17.2-transient2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "C:/Users/Behrooz/Desktop/SPICE Examples - Orcad New Version/sedra_lib.lib"
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 200ms 100m 1u 
+.FOUR 1K 10 V([1]) 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "../Example PS.17.2.net"
+
+
+.END

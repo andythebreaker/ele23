@@ -1,0 +1,19 @@
+** Profile: "Tow-Thomas Biquad-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 12\chapter 12-tow-thomas biquad-ac.sim ] 
+
+** Creating circuit file "chapter 12-tow-thomas biquad-ac.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 2000 9K 11k
+.STEP PARAM Cc LIST 0 20p 40p 60p 80p 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 12-Tow-Thomas Biquad.net" 
+
+
+.END

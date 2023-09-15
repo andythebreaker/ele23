@@ -1,0 +1,13 @@
+* source CHAPTER 2
+R_A1_Rid         N43900 A1_2  {Rid}  
+V_A1_VOS         A1_2 N43767 {VOS}
+E_A1_Ed         A1_N43852 0 A1_2 N43900 {A0d}
+C_A1_Cb         0 A1_B  {Cb}  
+R_A1_Ro         OUT A1_N44070  {Ro}  
+E_A1_Eb         A1_N44070 0 A1_B 0 1
+R_A1_Rb         A1_B A1_N43852  {Rb}  
+V_Vin         N43900 0 DC 0Vdc AC 1Vac 
+R_R1         N43767 0  {R1}  
+R_R2         N43767 OUT  {R2}  
+.PARAM  R1=1K R2=100K VOS=1e-3 Rid=2e6 Ro=75 ft=1e6 Cb=1e-12 A0d=1e5 Rb=
++ {A0d/(2*3.142*ft*Cb)}

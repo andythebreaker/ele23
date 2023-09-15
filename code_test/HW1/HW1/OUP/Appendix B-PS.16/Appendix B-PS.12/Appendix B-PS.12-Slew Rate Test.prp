@@ -1,0 +1,261 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("R"
+            ("info"
+                ("spice_dsg"	"R")
+                ("port_order"
+                    ("1")
+                    ("2")
+                )
+            )
+            ("model_params"
+                ("level_0"
+                    ("TC1"
+                        ("value"	"0")
+                    )
+                    ("TC2"
+                        ("value"	"0")
+                    )
+                    ("VALUE"
+                        ("value"	"0")
+                    )
+                )
+            )
+            ("smoke"
+                ("pre_smoke"
+                    ("NODE_VA"	"1")
+                    ("NODE_VB"	"2")
+                    ("DERATE_TYPE"	"RES")
+                )
+                ("max_ops"
+                    ("RV"	"VOLTAGE")
+                    ("PDM"	"POWER")
+                    ("SLP"	"SLOPE")
+                    ("RBA"	"1/SLP")
+                    ("TMAX"	"MAX_TEMP")
+                    ("TB"	"TMAX")
+                )
+                ("smoke_tests"
+                    ("PDM"
+                        ("test"	"power_test")
+                    )
+                    ("RV"
+                        ("test"	"abs_voltage_test")
+                        ("nodes"
+                            ("NODE_VA")
+                            ("NODE_VB")
+                        )
+                    )
+                    ("TB"
+                        ("test"	"temp_null_test")
+                    )
+                )
+                ("device_max_ops")
+            )
+        )
+        ("C"
+            ("info"
+                ("spice_dsg"	"C")
+                ("port_order"
+                    ("1")
+                    ("2")
+                )
+            )
+            ("model_params"
+                ("level_0"
+                    ("IC"
+                        ("value"	"0")
+                    )
+                    ("TC"
+                        ("value"	"0")
+                    )
+                    ("VALUE"
+                        ("value"	"0")
+                    )
+                )
+            )
+            ("smoke"
+                ("pre_smoke"
+                    ("NODE_VA"	"1")
+                    ("NODE_VB"	"2")
+                    ("TERM_A"	"-1")
+                    ("DERATE_TYPE"	"CAP")
+                )
+                ("max_ops"
+                    ("CV"	"VOLTAGE")
+                    ("CI"	"CURRENT")
+                    ("SLP"	"SLOPE")
+                    ("TBRK"	"KNEE")
+                    ("TMAX"	"MAX_TEMP")
+                )
+                ("smoke_tests"
+                    ("CV"
+                        ("test"	"abs_voltage_test")
+                        ("nodes"
+                            ("NODE_VA")
+                            ("NODE_VB")
+                        )
+                    )
+                    ("CI"
+                        ("test"	"abs_current_test")
+                        ("term"	"TERM_A")
+                    )
+                )
+                ("device_max_ops")
+            )
+        )
+        ("VDC")
+        ("IDC")
+        ("PARAM")
+    )
+    ("instances"
+        ("R"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"{R}")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("Cc"
+            ("device_name"	"C")
+            ("pspice_path"	"C_Cc")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"{Cc}")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("VOLTAGE"	"50.0")
+                ("CURRENT"	"1.0")
+                ("SLOPE"	"0.005")
+                ("KNEE"	"125.0")
+                ("MAX_TEMP"	"125.0")
+            )
+        )
+        ("CL"
+            ("device_name"	"C")
+            ("pspice_path"	"C_CL")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"{Cload}")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("VOLTAGE"	"50.0")
+                ("CURRENT"	"1.0")
+                ("SLOPE"	"0.005")
+                ("KNEE"	"125.0")
+                ("MAX_TEMP"	"125.0")
+            )
+        )
+        ("VCC"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_VCC")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"{VDD}")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("Iref"
+            ("device_name"	"IDC")
+            ("pspice_path"	"I_Iref")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"{Iref}")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("PARAM"
+            ("device_name"	"PARAM")
+            ("pspice_path"	"")
+            ("level"	"0")
+            ("model_params"
+                ("VDD"
+                    ("value"	"3.3")
+                    ("pspice_param"	"VDD")
+                )
+                ("Cload"
+                    ("value"	"1p")
+                    ("pspice_param"	"Cload")
+                )
+                ("M1"
+                    ("value"	"8")
+                    ("pspice_param"	"M1")
+                )
+                ("M2"
+                    ("value"	"8")
+                    ("pspice_param"	"M2")
+                )
+                ("M3"
+                    ("value"	"2")
+                    ("pspice_param"	"M3")
+                )
+                ("Iref"
+                    ("value"	"90u")
+                    ("pspice_param"	"Iref")
+                )
+                ("M4"
+                    ("value"	"2")
+                    ("pspice_param"	"M4")
+                )
+                ("M5"
+                    ("value"	"16")
+                    ("pspice_param"	"M5")
+                )
+                ("M6"
+                    ("value"	"4")
+                    ("pspice_param"	"M6")
+                )
+                ("VCM"
+                    ("value"	"1.65")
+                    ("pspice_param"	"VCM")
+                )
+                ("M7"
+                    ("value"	"16")
+                    ("pspice_param"	"M7")
+                )
+                ("Vstep"
+                    ("value"	"10m")
+                    ("pspice_param"	"Vstep")
+                )
+                ("M8"
+                    ("value"	"16")
+                    ("pspice_param"	"M8")
+                )
+                ("Gain"
+                    ("value"	"-10")
+                    ("pspice_param"	"Gain")
+                )
+                ("R"
+                    ("value"	"3.2K")
+                    ("pspice_param"	"R")
+                )
+                ("Cc"
+                    ("value"	"0.6p")
+                    ("pspice_param"	"Cc")
+                )
+            )
+        )
+    )
+)

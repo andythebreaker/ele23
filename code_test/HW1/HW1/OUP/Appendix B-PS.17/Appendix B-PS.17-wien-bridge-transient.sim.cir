@@ -1,0 +1,19 @@
+** Profile: "Wien-Bridge-transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 13\chapter 13-wien-bridge-transient.sim ] 
+
+** Creating circuit file "chapter 13-wien-bridge-transient.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 200m 20m 20u 
+.FOUR 986.6 10 V([OUT]) 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 13-Wien-Bridge.net" 
+
+
+.END

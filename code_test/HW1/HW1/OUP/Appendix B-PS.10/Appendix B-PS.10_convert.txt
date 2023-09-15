@@ -1,0 +1,10 @@
+The conversion of the project was successful.
+
+The new directory structure is as follows:
+
+C:/Users/Behrooz/Desktop/SPICE Examples - Orcad New Version/Appendix B-PS.10
+    Appendix B-PS.10.opj
+    Appendix B-PS.10.dsn
+    Appendix B-PS.10.dbk
+C:/Users/Behrooz/Desktop/SPICE Examples - Orcad New Version/Appendix B-PS.10/Appendix B-PS.10-PSpiceFiles
+    Example PS.10.1

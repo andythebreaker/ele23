@@ -1,0 +1,78 @@
+(ExpressProject "Appendix B-PS.12"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\sedra_lib.olb"
+        (DisplayName "..\sedra_lib.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\Appendix B-PS.12.DSN"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File
+       ".\appendix b-ps.12-pspicefiles\example ps.12.1 slew rate\example ps.12.1 slew rate.net"
+      (Type "Report"))
+    (File
+       ".\appendix b-ps.12-pspicefiles\example ps.12.1 ac gain\example ps.12.1 ac gain.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (File "..\sedra_lib.lib"
+        (DisplayName "..\sedra_lib.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.12-pspicefiles\example ps.12.1 slew rate\dc sweep.sim"
+        (DisplayName "Example PS.12.1 Slew Rate-DC Sweep")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\appendix b-ps.12-pspicefiles\example ps.12.1 ac gain\ac.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.12-pspicefiles\example ps.12.1 ac gain\ac.sim"
+        (DisplayName "Example PS.12.1 AC Gain-AC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.12-pspicefiles\example ps.12.1 ac gain\bias.sim"
+        (DisplayName "Example PS.12.1 AC Gain-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.12-pspicefiles\example ps.12.1 ac gain\dc transfer.sim"
+        (DisplayName "Example PS.12.1 AC Gain-DC Transfer")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.12-pspicefiles\example ps.12.1 slew rate\bias.sim"
+        (DisplayName "Example PS.12.1 Slew Rate-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.12-pspicefiles\example ps.12.1 slew rate\slew.sim"
+        (DisplayName "Example PS.12.1 Slew Rate-slew")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Behrooz\Desktop\SPICE Examples - Orcad New Version\Appendix B-PS.12\Appendix B-PS.12.DSN")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "C:\Users\Behrooz\Desktop\SPICE Examples - Orcad New Version\Appendix B-PS.12\Appendix B-PS.12.DSN"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 0 825 -4 -34 0 352 0 463"))
+      (Tab 0)))
+  (PartMRUSelector)
+  (MPSSessionName "Behrooz"))

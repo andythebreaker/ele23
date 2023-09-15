@@ -1,0 +1,13 @@
+* source APPENDIX B-PS.4
+X_TX1         0 2 3 4 5 TX 
+R_R4         4 0  {Risolation}  
+R_R1         7 6  {R}  
+R_R2         2 1  {Rs}  
+V_Vsin         1 0  
++SIN 0 169 60 0 0 0
+C_C1         4 6  {C}  
+D_D1         3 6 D1N4148 
+X_Z1         4 7 ZENER_DIODE 
+R_R3         7 4  {Rload}  
+D_D2         5 6 D1N4148 
+.PARAM  Risolation=100E6 Rload=200 R=191 C=520u Rs=0.5

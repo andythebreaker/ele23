@@ -1,0 +1,123 @@
+(ExpressProject "Appendix B-PS.6"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\sedra_lib.olb"
+        (DisplayName "..\sedra_lib.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\Appendix B-PS.6.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}"))
+  (Folder "Outputs"
+    (File ".\appendix b-ps.6-pspicefiles\example ps.6.1\example ps.6.1.net"
+      (Type "Report"))
+    (File
+       ".\appendix b-ps.6-pspicefiles\example ps.6.2 ac gain\example ps.6.2 ac gain.net"
+      (Type "Report"))
+    (File
+       ".\appendix b-ps.6-pspicefiles\example ps.6.2 rout\example ps.6.2 rout.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (File "..\sedra_lib.lib"
+        (DisplayName "..\sedra_lib.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\appendix b-ps.6-pspicefiles\example ps.6.2 rout\ac.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.6-pspicefiles\example ps.6.2 rout\ac.sim"
+        (DisplayName "Example PS.6.2 Rout-AC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.6-pspicefiles\example ps.6.1\dc sweep.sim"
+        (DisplayName "Example PS.6.1-DC Sweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.6-pspicefiles\example ps.6.2 ac gain\ac.sim"
+        (DisplayName "Example PS.6.2 AC Gain-AC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.6-pspicefiles\example ps.6.2 ac gain\bias.sim"
+        (DisplayName "Example PS.6.2 AC Gain-Bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.6-pspicefiles\example ps.6.2 bias stability\bias.sim"
+        (DisplayName "Example PS.6.2 Bias Stability-Bias")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (IAC
+      (FullPartName "IAC.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Q2N3904
+      (FullPartName "Q2N3904.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (BSP100/PLP
+      (FullPartName "BSP100/PLP.Normal")
+      (LibraryName
+         "C:\CADENCE\PSD_14.2\TOOLS\CAPTURE\LIBRARY\PSPICE\PHIL_FET.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\CADENCE\PSD_14.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (2N2222A/ZTX
+      (FullPartName "2N2222A/ZTX.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ZETEX.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Behrooz\Desktop\SPICE Examples - Orcad New Version\Appendix B-PS.6\Appendix B-PS.6.dsn")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "C:\Users\Behrooz\Desktop\SPICE Examples - Orcad New Version\Appendix B-PS.6\Appendix B-PS.6.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -34 8 560 -3 813"))
+      (Tab 0)))
+  (LastUsedLibraryBrowseDirectory "E:\Cadence\PSD_14.1\Capture\Library")
+  (MPSSessionName "Behrooz"))

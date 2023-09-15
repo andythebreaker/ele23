@@ -1,0 +1,18 @@
+** Profile: "Example PS.8.1-bias"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.8\appendix b-ps.8-example ps.8.1-bias.sim ] 
+
+** Creating circuit file "appendix b-ps.8-example ps.8.1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "C:/Users/Behrooz/Desktop/SPICE Examples - Orcad New Version/sedra_lib.lib"
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC "../Example PS.8.1.net"
+
+
+.END

@@ -1,0 +1,8 @@
+* source APPENDIX B-PS.2
+E_En         CM INN D 0 0.5
+V_VCC         VCC 0 15V
+V_VEE         0 VEE 15V
+V_VCM         CM 0 0Vdc
+V_Vd         D 0 DC 0Vdc AC 1Vac 
+X_U1         INP INN VCC VEE OUT uA741
+E_Ep         INP CM D 0 0.5

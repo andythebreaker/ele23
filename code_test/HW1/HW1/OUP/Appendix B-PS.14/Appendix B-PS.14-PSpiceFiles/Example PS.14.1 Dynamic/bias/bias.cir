@@ -1,0 +1,17 @@
+** Profile: "Example PS.14.1 Dynamic-bias"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.14\appendix b-ps.14-example ps.14.1 dynamic-bias.sim ] 
+
+** Creating circuit file "appendix b-ps.14-example ps.14.1 dynamic-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "C:/Users/Behrooz/Desktop/SPICE Examples - Orcad New Version/sedra_lib.lib"
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "../Example PS.14.1 Dynamic.net"
+
+
+.END

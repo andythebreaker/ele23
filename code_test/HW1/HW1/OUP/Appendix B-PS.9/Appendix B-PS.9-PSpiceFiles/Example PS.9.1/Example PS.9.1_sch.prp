@@ -1,0 +1,82 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("Param")
+        ("VAC")
+        ("IDC")
+        ("VDC")
+    )
+    ("instances"
+        ("PARAM"
+            ("device_name"	"Param")
+            ("pspice_path"	"")
+            ("level"	"0")
+            ("model_params"
+                ("level"
+                    ("value"	"1")
+                    ("pspice_param"	"level")
+                )
+                ("level"
+                    ("value"	"1")
+                    ("pspice_param"	"level")
+                )
+                ("w"
+                    ("value"	"12.5u")
+                    ("pspice_param"	"w")
+                )
+                ("m"
+                    ("value"	"2")
+                    ("pspice_param"	"m")
+                )
+                ("m1"
+                    ("value"	"10")
+                    ("pspice_param"	"m1")
+                )
+                ("iref"
+                    ("value"	"100u")
+                    ("pspice_param"	"iref")
+                )
+                ("vdd"
+                    ("value"	"10")
+                    ("pspice_param"	"vdd")
+                )
+            )
+        )
+        ("Vin"
+            ("device_name"	"VAC")
+            ("pspice_path"	"V_Vin")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1.5Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("ACMAG"
+                    ("value"	"1Vac")
+                    ("pspice_param"	"AC")
+                )
+            )
+        )
+        ("I2"
+            ("device_name"	"IDC")
+            ("pspice_path"	"I_I2")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"{Iref}")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("V2"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V2")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"{VDD}")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+    )
+)

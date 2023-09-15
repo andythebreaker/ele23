@@ -1,0 +1,97 @@
+(ExpressProject "Appendix B-PS.17"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\sedra_lib.olb"
+        (DisplayName "..\sedra_lib.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\Appendix B-PS.17.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\appendix b-ps.17-pspicefiles\example ps.17.2\example ps.17.2.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (File "..\sedra_lib.lib"
+        (DisplayName "..\sedra_lib.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.17-pspicefiles\example ps.17.1\transient.sim"
+        (DisplayName "Example PS.17.1-transient")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\appendix b-ps.17-pspicefiles\example ps.17.2\transient2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.17-pspicefiles\example ps.17.2\transient2.sim"
+        (DisplayName "Example PS.17.2-transient2")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (D1N4148
+      (FullPartName "D1N4148.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (u741
+      (FullPartName "u741.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (uA741
+      (FullPartName "uA741.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (1N4148
+      (FullPartName "1N4148.Normal")
+      (LibraryName "E:\CADENCE\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DI.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (Q2N3906
+      (FullPartName "Q2N3906.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 -1 287 0 686"))
+      (Tab 0)))
+  (MPSSessionName "Behrooz"))

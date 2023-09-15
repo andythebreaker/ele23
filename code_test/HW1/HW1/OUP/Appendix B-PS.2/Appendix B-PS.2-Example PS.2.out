@@ -1,0 +1,83 @@
+
+**** 10/09/09 21:31:31 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.2.1 Rout-AC"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "appendix b-ps.2-example ps.2.1 rout-ac.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 25 0.1 100E6
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\Appendix B-PS.2-Example PS.2.1 Rout.net" 
+
+
+
+**** INCLUDING "Appendix B-PS.2-Example PS.2.1 Rout.net" ****
+* source APPENDIX B-PS.2
+I_Iout         OUT 0 DC 0Adc AC 1Aac 
+R_A1_Rid         N44351 A1_2  {Rid}  
+V_A1_VOS         A1_2 0 {VOS}
+E_A1_Ed         A1_N43852 0 A1_2 N44351 1E5
+C_A1_Cb         0 A1_B  {Cb}  
+R_A1_Ro         OUT A1_N44070  {Ro}  
+E_A1_Eb         A1_N44070 0 A1_B 0 1
+R_A1_Rb         A1_B A1_N43852  {Rb}  
+R_R1         N44351 0  {R1}  
+R_R2         N44351 OUT  {R2}  
+.PARAM  R1=1K R2=100K VOS=1e-3 Rid=2e6 Ro=75 ft=1e6 Cb=1e-12 A0d=1e5 Rb=
++ {A0d/(2*3.142*ft*Cb)}
+
+**** RESUMING "appendix b-ps.2-example ps.2.1 rout-ac.sim.cir" ****
+.END
+
+**** 10/09/09 21:31:31 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.2.1 Rout-AC"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .1009  ( A1_2)     .0010  ( A1_B)     .1010  (N44351) 999.0E-06     
+
+(A1_N43852)     .1010                 (A1_N44070)     .1010                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_A1_VOS    -5.049E-13
+
+    TOTAL POWER DISSIPATION   5.05E-16  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

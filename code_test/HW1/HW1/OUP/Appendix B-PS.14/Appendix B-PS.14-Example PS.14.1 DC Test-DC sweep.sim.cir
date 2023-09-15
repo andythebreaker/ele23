@@ -1,0 +1,19 @@
+** Profile: "Example 11.9 DC Test-DC sweep"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 11\chapter 11-Example 11.9 DC Test-DC sweep.sim ] 
+
+** Creating circuit file "chapter 11-Example 11.9 DC Test-DC sweep.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Va -2 0 0.1m 
+.STEP TEMP LIST 0 70 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 11-Example 11.9 DC Test.net" 
+
+
+.END

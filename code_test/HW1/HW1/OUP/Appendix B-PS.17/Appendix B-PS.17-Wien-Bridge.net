@@ -1,0 +1,15 @@
+* source CHAPTER 13
+C_C4         N00375 N00279  {C4} IC=0 
+X_U1         N00279 N00504 VCC VEE A uA741
+R_R1b         N00504 OUT  {R1b}  
+C_C3         0 N00279  {C3} IC=0 
+R_R4         N00375 A  {R4}  
+D_D1         A OUT D1N4148 
+R_R3         0 N00279  {R3}  
+V_VCC         VCC 0 {VCC}
+R_R2         OUT A  {R2}  
+V_VEE         VEE 0 {VEE}
+R_R1a         0 N00504  {R1a}  
+D_D2         OUT A D1N4148 
+.PARAM  VEE=-15 VCC=15 C3=16n R2=10K C4=16n R3=10K R4=10K R1a=18K R1b={50K-
++ {R1a}}

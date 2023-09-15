@@ -1,0 +1,93 @@
+
+**** 09/15/23 12:41:04 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "HW1_1_AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Program Files (x86)/OUP/sedra_lib.lib" 
+* From [PSPICE NETLIST] section of C:\cadence\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 0 1G
+-----------$
+ERROR(ORPSIM-16103): Invalid value
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HW1
+V_VDD         N00700 0 3.3Vdc
+R_RS         0 N00725  150k TC=0,0 
+M_M1         N00411 N01229 N00662 N00662 PMOS0P5  
++ L=0.5u  
++ W=12u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M=1
+M_M2         VO N01180 N00662 N00662 PMOS0P5  
++ L=0.5u  
++ W=12u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M=1
+M_M6         N00725 N00725 N00700 N00700 PMOS0P5  
++ L=0.5u  
++ W=0.75u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M=1
+M_M5         N00662 N00725 N00700 N00700 PMOS0P5  
++ L=0.5u  
++ W=2.5u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M=1
+M_M3         N00411 N00411 0 N00571 NMOS0P5  
++ L=0.5u  
++ W=5u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M=1
+M_M4         VO N00411 0 N00580 NMOS0P5  
++ L=0.5u  
++ W=5u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M=1
+C_CL         0 VO  1p  TC=0,0 
+V_Vin+         N01229 0 DC 1.65Vdc AC 0.5749020786Vac 
+V_Vin-         N01180 0 DC 1.65Vdc AC -0.5749020786Vac 
+
+**** RESUMING HW1_1_AC.cir ****
+.END
+

@@ -1,0 +1,162 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("R"
+            ("info"
+                ("spice_dsg"	"R")
+                ("port_order"
+                    ("1")
+                    ("2")
+                )
+            )
+            ("model_params"
+                ("level_0"
+                    ("TC1"
+                        ("value"	"0")
+                    )
+                    ("TC2"
+                        ("value"	"0")
+                    )
+                    ("VALUE"
+                        ("value"	"0")
+                    )
+                )
+            )
+            ("smoke"
+                ("pre_smoke"
+                    ("NODE_VA"	"1")
+                    ("NODE_VB"	"2")
+                    ("DERATE_TYPE"	"RES")
+                )
+                ("max_ops"
+                    ("RV"	"VOLTAGE")
+                    ("PDM"	"POWER")
+                    ("SLP"	"SLOPE")
+                    ("RBA"	"1/SLP")
+                    ("TMAX"	"MAX_TEMP")
+                    ("TB"	"TMAX")
+                )
+                ("smoke_tests"
+                    ("PDM"
+                        ("test"	"power_test")
+                    )
+                    ("RV"
+                        ("test"	"abs_voltage_test")
+                        ("nodes"
+                            ("NODE_VA")
+                            ("NODE_VB")
+                        )
+                    )
+                    ("TB"
+                        ("test"	"temp_null_test")
+                    )
+                )
+                ("device_max_ops")
+            )
+        )
+        ("VDC")
+        ("PARAM")
+    )
+    ("instances"
+        ("R2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"{RD}")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"{RG1}")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"{RG2}")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Vdrain"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_Vdrain")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0Vdc")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"{VDD}")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("R4"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R4")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"{RS}")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("PARAM"
+            ("device_name"	"PARAM")
+            ("pspice_path"	"")
+            ("level"	"0")
+            ("model_params"
+                ("VDD"
+                    ("value"	"3.3")
+                    ("pspice_param"	"VDD")
+                )
+                ("RS"
+                    ("value"	"1E-15")
+                    ("pspice_param"	"RS")
+                )
+                ("W"
+                    ("value"	"22u")
+                    ("pspice_param"	"W")
+                )
+                ("RD"
+                    ("value"	"4.2K")
+                    ("pspice_param"	"RD")
+                )
+                ("L"
+                    ("value"	"0.6u")
+                    ("pspice_param"	"L")
+                )
+                ("RG1"
+                    ("value"	"2E6")
+                    ("pspice_param"	"RG1")
+                )
+                ("RG2"
+                    ("value"	"0.88E6")
+                    ("pspice_param"	"RG2")
+                )
+            )
+        )
+    )
+)
