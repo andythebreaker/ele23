@@ -1,5 +1,0 @@
-* source APPENDIX B-PS.6
-Q_Q1         N107716 N108658 0 Q2N3904
-V_V1         N107716 0 {VCE}
-I_Ibase         0 N108658 DC {ib}  
-.PARAM  VCE=2V ib=10u
