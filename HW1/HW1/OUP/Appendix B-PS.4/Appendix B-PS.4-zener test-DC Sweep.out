@@ -1,0 +1,70 @@
+
+**** 09/25/03 15:31:21 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "zener test-DC Sweep"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\PSPICE Archive\CHAPTER 3\chapter 3
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "chapter 3-zener test-DC Sweep.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\PSPICE Libraries\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vtest 0 6 1m 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\chapter 3-zener test.net" 
+
+
+
+**** INCLUDING "chapter 3-zener test.net" ****
+* source CHAPTER 3
+X_Z1         0 N205946 ZENER_DIODE 
+V_Vtest         N205946 0 5V
+
+**** RESUMING "chapter 3-zener test-DC Sweep.sim.cir" ****
+.END
+
+**** 09/25/03 15:31:21 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "zener test-DC Sweep"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\PSPICE Archive\CHAPTER 3\chapter 3
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Z1.1mA_diode  X_Z1.ideal_diode 
+          IS  100.000000E-12  100.000000E-12 
+           N    1.679            .01         
+
+
+
+          JOB CONCLUDED
+
+**** 09/25/03 15:31:21 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "zener test-DC Sweep"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\PSPICE Archive\CHAPTER 3\chapter 3
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .72
+

@@ -1,0 +1,178 @@
+
+**** 10/01/03 20:54:43 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 5.21 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 5\chap
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "chapter 5-Example 5.21 AC Gain-AC.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 15 1 100E6
+.STEP PARAM RE2 LIST 1 130 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 5-Example 5.21 AC Gain.net" 
+
+
+
+**** INCLUDING "chapter 5-Example 5.21 AC Gain.net" ****
+* source CHAPTER 5
+R_R9         0 N100480  {Re2}  
+C_C1         N100256 OUT  {CCO}  
+R_R5         IN N100121  {Rsig}  
+R_R6         0 OUT  {RL}  
+R_R8         VSS N100148  {RE1}  
+V_V6         VDD 0 {VDD}
+V_V5         IN 0 DC 0Vdc AC 1Vac 
+C_C3         N100480 N100148  {CB}  
+C_C2         N100121 N99836  {CCI}  
+Q_Q2         N100256 N99836 N100148 Q2N3904
+R_R4         N100256 VDD  {RC}  
+R_R7         0 N99836  {RB}  
+V_V7         VSS 0 {VSS}
+.PARAM  VSS=-5 VDD=5 RB=340K RC=10K CCI=10u RE1=6K RL=10K CCO=10u RE2=1
++  Rsig=10K CB=10u
+
+**** RESUMING "chapter 5-Example 5.21 AC Gain-AC.sim.cir" ****
+.END
+
+**** 10/01/03 20:54:43 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 5.21 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 5\chap
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE    4.493000E-12 
+         MJE     .2593       
+         CJC    3.638000E-12 
+         MJC     .3085       
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 10/01/03 20:54:43 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 5.21 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 5\chap
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RE2 =    1     
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (  VDD)    5.0000  (  VSS)   -5.0000      
+
+(N99836)   -1.3662 (N100121)    0.0000                   (N100148)   -2.0130    
+
+(N100256)     .0618                   (N100480)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V6        -4.938E-04
+    V_V5         0.000E+00
+    V_V7         4.978E-04
+
+    TOTAL POWER DISSIPATION   4.96E-03  WATTS
+
+
+**** 10/01/03 20:54:43 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 5.21 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 5\chap
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM RE2 =  130   
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)    0.0000  (  VDD)    5.0000  (  VSS)   -5.0000      
+
+(N99836)   -1.3662 (N100121)    0.0000                   (N100148)   -2.0130    
+
+(N100256)     .0618                   (N100480)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V6        -4.938E-04
+    V_V5         0.000E+00
+    V_V7         4.978E-04
+
+    TOTAL POWER DISSIPATION   4.96E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/01/03 20:54:43 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 5.21 AC Gain-AC"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 5\chap
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM RE2 =  130   
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .07
+

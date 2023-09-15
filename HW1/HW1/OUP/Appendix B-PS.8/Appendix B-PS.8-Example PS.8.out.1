@@ -1,0 +1,234 @@
+
+**** 10/09/09 18:55:46 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.8.1-bias"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.8\a
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "appendix b-ps.8-example ps.8.1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\Appendix B-PS.8-Example PS.8.1.net" 
+
+
+
+**** INCLUDING "Appendix B-PS.8-Example PS.8.1.net" ****
+* source APPENDIX B-PS.8
+Q_Q6C         N71939 N71917 VEE Q2N3904
+R_R3         A VCC  {R3}  
+Q_Q7         B A N72373 Q2N3906
+Q_Q6B         N71939 N71917 VEE Q2N3904
+R_R4         N72373 VCC  {R4}  
+V_Vd         D 0 DC -260.4u AC 1Vac 
+R_R5         VEE B  {R5}  
+R_R7         N80593 VCC  {R3_2}  
+Q_Q6A         N71939 N71917 VEE Q2N3904
+R_R6         VEE OUT  {R6}  
+E_Ep         INP N72475 D 0 0.5
+Q_Q1         N72383 INP N71929 Q2N3904
+Q_Q3         N71929 N71917 VEE Q2N3904
+E_En         N72475 INN D 0 0.5
+Q_Q4         N80593 N72383 N71939 Q2N3904
+Q_Q2         N72387 INN N71929 Q2N3904
+Q_Q8         VCC B OUT Q2N3904
+R_RB         N71917 0  {RB}  
+Q_Q5         A N72387 N71939 Q2N3904
+V_VCM         N72475 0 {VCM}
+V_VCC         VCC 0 {VCC}
+R_R1         N72383 VCC  {R1}  
+Q_Q6D         N71939 N71917 VEE Q2N3904
+V_VEE         VEE 0 {VEE}
+Q_Q9         N71917 N71917 VEE Q2N3904
+R_R2         N72387 VCC  {R2}  
+.PARAM  VCC=15 VEE=-15 R1=20K RB=28.6K R2=20K R3=3K R4=2.3K R5=15.7K R6=3K
++  R3_2=1E-10 VCM=0
+
+**** RESUMING "appendix b-ps.8-example ps.8.1-bias.sim.cir" ****
+.END
+
+**** 10/09/09 18:55:46 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.8.1-bias"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.8\a
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         Q2N3906         
+               NPN             PNP             
+          IS    6.734000E-15    1.410000E-15 
+          BF  416.4           180.7          
+          NF    1               1            
+         VAF   74.03           18.7          
+         IKF     .06678          .08         
+         ISE    6.734000E-15                 
+          NE    1.259                        
+          BR     .7371          4.977        
+          NR    1               1            
+          RB   10              10            
+          RC    1               2.5          
+         CJE    4.493000E-12    8.063000E-12 
+         MJE     .2593           .3677       
+         CJC    3.638000E-12    9.728000E-12 
+         MJC     .3085           .5776       
+          TF  301.200000E-12  179.300000E-12 
+         XTF    2               6            
+         VTF    4               4            
+         ITF     .4              .4          
+          TR  239.500000E-09   33.420000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 10/09/09 18:55:46 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.8.1-bias"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.8\a
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)   11.9350  (    B)     .7007  (    D)-260.4E-06  (  INN) 130.2E-06      
+
+(  INP)-130.2E-06  (  OUT)    -.0033  (  VCC)   15.0000  (  VEE)  -15.0000      
+
+(N71917)  -14.3540 (N71929)    -.6296 (N71939)    8.5365 (N72373)   12.6290     
+
+(N72383)    9.2103 (N72387)    9.2020 (N72475)    0.0000 (N80593)   15.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vd         0.000E+00
+    V_VCM       -4.561E-06
+    V_VCC       -9.074E-03
+    V_VEE        9.571E-03
+
+    TOTAL POWER DISSIPATION   2.80E-01  WATTS
+
+
+**** 10/09/09 18:55:46 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.8.1-bias"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.8\a
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         E_Ep        E_En      
+V-SOURCE    -1.302E-04  -1.302E-04
+I-SOURCE    -2.271E-06   2.290E-06
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q6C       Q_Q7        Q_Q6B       Q_Q6A       Q_Q1      
+MODEL        Q2N3904     Q2N3906     Q2N3904     Q2N3904     Q2N3904   
+IB           3.97E-06   -3.58E-06    3.97E-06    3.97E-06    2.27E-06 
+IC           6.26E-04   -1.03E-03    6.26E-04    6.26E-04    2.80E-04 
+VBE          6.46E-01   -6.95E-01    6.46E-01    6.46E-01    6.29E-01 
+VBC         -2.29E+01    1.12E+01   -2.29E+01   -2.29E+01   -9.21E+00 
+VCE          2.35E+01   -1.19E+01    2.35E+01    2.35E+01    9.84E+00 
+BETADC       1.58E+02    2.87E+02    1.58E+02    1.58E+02    1.23E+02 
+GM           2.40E-02    3.94E-02    2.40E-02    2.40E-02    1.08E-02 
+RPI          7.62E+03    7.23E+03    7.62E+03    7.62E+03    1.34E+04 
+RX           1.00E+01    1.00E+01    1.00E+01    1.00E+01    1.00E+01 
+RO           1.55E+05    2.91E+04    1.55E+05    1.55E+05    2.98E+05 
+CBE          1.36E-11    2.07E-11    1.36E-11    1.36E-11    9.57E-12 
+CBC          1.25E-12    1.96E-12    1.25E-12    1.25E-12    1.64E-12 
+CJS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+BETAAC       1.83E+02    2.84E+02    1.83E+02    1.83E+02    1.45E+02 
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+FT/FT2       2.57E+08    2.76E+08    2.57E+08    2.57E+08    1.53E+08 
+
+
+
+NAME         Q_Q3        Q_Q4        Q_Q2        Q_Q8        Q_Q5      
+MODEL        Q2N3904     Q2N3904     Q2N3904     Q2N3904     Q2N3904   
+IB           3.97E-06    9.83E-06    2.29E-06    2.70E-05    7.46E-06 
+IC           5.67E-04    1.46E-03    2.82E-04    4.97E-03    1.03E-03 
+VBE          6.46E-01    6.74E-01    6.30E-01    7.04E-01    6.65E-01 
+VBC         -1.37E+01   -5.79E+00   -9.20E+00   -1.43E+01   -2.73E+00 
+VCE          1.44E+01    6.46E+00    9.83E+00    1.50E+01    3.40E+00 
+BETADC       1.43E+02    1.49E+02    1.23E+02    1.84E+02    1.38E+02 
+GM           2.17E-02    5.54E-02    1.09E-02    1.82E-01    3.91E-02 
+RPI          7.62E+03    3.05E+03    1.33E+04    1.09E+03    4.03E+03 
+RX           1.00E+01    1.00E+01    1.00E+01    1.00E+01    1.00E+01 
+RO           1.55E+05    5.46E+04    2.95E+05    1.78E+04    7.49E+04 
+CBE          1.29E-11    2.32E-11    9.60E-12    6.13E-11    1.82E-11 
+CBC          1.46E-12    1.87E-12    1.64E-12    1.44E-12    2.27E-12 
+CJS          0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+BETAAC       1.66E+02    1.69E+02    1.45E+02    1.98E+02    1.57E+02 
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+FT/FT2       2.40E+08    3.52E+08    1.54E+08    4.60E+08    3.03E+08 
+
+
+
+NAME         Q_Q6D       Q_Q9      
+MODEL        Q2N3904     Q2N3904   
+IB           3.97E-06    3.97E-06 
+IC           6.26E-04    4.78E-04 
+VBE          6.46E-01    6.46E-01 
+VBC         -2.29E+01    0.00E+00 
+VCE          2.35E+01    6.46E-01 
+BETADC       1.58E+02    1.20E+02 
+GM           2.40E-02    1.83E-02 
+RPI          7.62E+03    7.62E+03 
+RX           1.00E+01    1.00E+01 
+RO           1.55E+05    1.55E+05 
+CBE          1.36E-11    1.19E-11 
+CBC          1.25E-12    3.64E-12 
+CJS          0.00E+00    0.00E+00 
+BETAAC       1.83E+02    1.40E+02 
+CBX/CBX2     0.00E+00    0.00E+00 
+FT/FT2       2.57E+08    1.88E+08 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

@@ -1,0 +1,18 @@
+.ALIASES
+C_C4            C4(1=N00375 2=N00279 ) CN @CHAPTER 13.Wien-Bridge(sch_1):I00249@ANALOG.C.Normal(chips)
+X_U1            U1(+=N00279 -=N00504 V+=VCC V-=VEE OUT=A ) CN @CHAPTER 13.Wien-Bridge(sch_1):I74479@SEDRA_LIB.u741.Normal(chips)
+R_R1b           R1b(1=N00504 2=OUT ) CN @CHAPTER 13.Wien-Bridge(sch_1):I00498@ANALOG.R.Normal(chips)
+C_C3            C3(1=0 2=N00279 ) CN @CHAPTER 13.Wien-Bridge(sch_1):I00083@ANALOG.C.Normal(chips)
+R_R4            R4(1=N00375 2=A ) CN @CHAPTER 13.Wien-Bridge(sch_1):I00369@ANALOG.R.Normal(chips)
+D_D1            D1(1=A 2=OUT ) CN @CHAPTER 13.Wien-Bridge(sch_1):I73913@SEDRA_LIB.D1N4148.Normal(chips)
+R_R3            R3(1=0 2=N00279 ) CN @CHAPTER 13.Wien-Bridge(sch_1):I00183@ANALOG.R.Normal(chips)
+V_VCC           VCC(+=VCC -=0 ) CN @CHAPTER 13.Wien-Bridge(sch_1):I72969@SOURCE.VDC.Normal(chips)
+R_R2            R2(1=OUT 2=A ) CN @CHAPTER 13.Wien-Bridge(sch_1):I00430@ANALOG.R.Normal(chips)
+V_VEE           VEE(+=VEE -=0 ) CN @CHAPTER 13.Wien-Bridge(sch_1):I72997@SOURCE.VDC.Normal(chips)
+R_R1a           R1a(1=0 2=N00504 ) CN @CHAPTER 13.Wien-Bridge(sch_1):I00464@ANALOG.R.Normal(chips)
+D_D2            D2(1=OUT 2=A ) CN @CHAPTER 13.Wien-Bridge(sch_1):I73983@SEDRA_LIB.D1N4148.Normal(chips)
+_    _(A=A)
+_    _(OUT=OUT)
+_    _(VCC=VCC)
+_    _(VEE=VEE)
+.ENDALIASES

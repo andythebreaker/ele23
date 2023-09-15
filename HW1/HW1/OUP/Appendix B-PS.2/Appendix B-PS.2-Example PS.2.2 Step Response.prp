@@ -1,0 +1,29 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("VDC")
+    )
+    ("instances"
+        ("VCC"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_VCC")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"15V")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("VEE"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_VEE")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"15V")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+    )
+)

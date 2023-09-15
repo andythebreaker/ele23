@@ -1,0 +1,74 @@
+* source CHAPTER 9
+R_R         A N136150  {R}  
+M_M3         B B 0 0 NMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={M3}
+C_Cc         N136150 OUT  {Cc}  
+M_M2         A IN N135996 N135996 PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M2}
+C_CL         0 OUT  {Cload}  
+M_M6         OUT A 0 0 NMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={M6}
+M_M1         B OUT N135996 N135996 PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M1}
+V_VCC         VDD 0 {VDD}
+V_Vpulse         IN 0 DC 1.65 
++PULSE {1.65+{Vstep}/2} {1.65-{Vstep}/2} 0 1p 1p 0.1u 0.2u
+M_M8         N135944 N135944 VDD VDD PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M8}
+M_M5         N135996 N135944 VDD VDD PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M5}
+I_Iref         N135944 0 DC {Iref}  
+M_M4         A B 0 0 NMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={M4}
+M_M7         OUT N135944 VDD VDD PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M7}
+.PARAM  VDD=3.3 Cload=1p M1=8 M2=8 M3=2 Iref=90u M4=2 M5=16 M6=4 VCM=1.65 M7=16
++  Vstep=10m M8=16 Gain=-10 R=3.2K Cc=0.6p

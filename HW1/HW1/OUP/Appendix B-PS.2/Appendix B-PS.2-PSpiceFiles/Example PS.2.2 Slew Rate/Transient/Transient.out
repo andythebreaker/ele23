@@ -1,0 +1,146 @@
+
+**** 10/03/03 15:01:49 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 2.9 Slew Rate-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "chapter 2-example 2.9 slew rate-transient.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 80u 0 10n 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 2-Example 2.9 Slew Rate.net" 
+
+
+
+**** INCLUDING "chapter 2-Example 2.9 Slew Rate.net" ****
+* source CHAPTER 2
+V_Vin         INP 0  
++PULSE -1 1 0 1n 1n 20u 40u
+X_U1         INP OUT VCC VEE OUT uA741
+V_VCC         VCC 0 15V
+V_VEE         0 VEE 15V
+
+**** RESUMING "chapter 2-example 2.9 slew rate-transient.sim.cir" ****
+.END
+
+**** 10/03/03 15:01:49 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 2.9 Slew Rate-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 10/03/03 15:01:49 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 2.9 Slew Rate-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         
+               NPN             
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 10/03/03 15:01:49 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 2.9 Slew Rate-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  INP)   -1.0000  (  OUT)    -.9999  (  VCC)   15.0000  (  VEE)  -15.0000      
+
+(X_U1.6) 94.24E-06 (X_U1.7)    -.9999 (X_U1.8)    -.9999 (X_U1.9)    0.0000     
+
+(X_U1.10)   -1.6074                   (X_U1.11)   14.9610                       
+
+(X_U1.12)   14.9610                   (X_U1.13)   -1.5936                       
+
+(X_U1.14)   -1.5936                   (X_U1.53)   14.0000                       
+
+(X_U1.54)  -14.0000                   (X_U1.90) 79.40E-06                       
+
+(X_U1.91)   40.0000                   (X_U1.92)  -40.0000                       
+
+(X_U1.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vin       -7.928E-08
+    V_VCC       -1.667E-03
+    V_VEE       -1.667E-03
+    X_U1.vb      9.424E-10
+    X_U1.vc      1.500E-11
+    X_U1.ve      1.355E-11
+    X_U1.vlim    7.940E-08
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   5.00E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/03/03 15:01:49 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 2.9 Slew Rate-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SPICE Examples\CHAPTER
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.51
+

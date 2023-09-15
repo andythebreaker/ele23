@@ -1,0 +1,152 @@
+(ExpressProject "Appendix B-PS.4"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\sedra_lib.olb"
+        (DisplayName "..\sedra_lib.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\Appendix B-PS.4.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_DoNot_Show_WarningDlg "TRUE"))
+  (Folder "Outputs"
+    (File ".\appendix b-ps.4-pspicefiles\example ps.4.1\example ps.4.1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (File "..\sedra_lib.lib"
+        (DisplayName "..\sedra_lib.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\appendix b-ps.4-pspicefiles\example ps.4.1\transient.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\appendix b-ps.4-pspicefiles\example ps.4.1\transient.sim"
+        (DisplayName "Example PS.4.1-transient")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (zener_diode
+      (FullPartName "zener_diode.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\SEDRA-PSPICE-CD\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (D1N4148
+      (FullPartName "D1N4148.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\SEDRA-PSPICE-CD\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TXtest
+      (FullPartName "TXtest.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (Transformer
+      (FullPartName "Transformer.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (TX
+      (FullPartName "TX.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (ZENER_DIODE
+      (FullPartName "ZENER_DIODE.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (100124
+      (FullPartName "100124.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\DIG_ECL.OLB")
+      (DeviceIndex "0"))
+    (Zener_diode2
+      (FullPartName "Zener_diode2.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\SEDRA_LIB.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (1N4148
+      (FullPartName "1N4148.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ADVANLS\DI.OLB")
+      (DeviceIndex "0"))
+    (M2N7000/ZTX
+      (FullPartName "M2N7000/ZTX.Normal")
+      (LibraryName
+         "C:\DOCUMENTS AND SETTINGS\ADEL SEDRA\MY DOCUMENTS\SEDRA WORK\PSPICE LIBRARIES\ZETEX.OLB")
+      (DeviceIndex "0"))
+    (MTD2955/MC
+      (FullPartName "MTD2955/MC.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\MOTORMOS.OLB")
+      (DeviceIndex "0"))
+    (2N6027
+      (FullPartName "2N6027.Normal")
+      (LibraryName
+         "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ADVANLS\AA_MISC.OLB")
+      (DeviceIndex "0"))
+    (V22ZA2
+      (FullPartName "V22ZA2.Normal")
+      (LibraryName
+         "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ADVANLS\AA_MISC.OLB")
+      (DeviceIndex "0"))
+    (2N2221A
+      (FullPartName "2N2221A.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (2N2219A
+      (FullPartName "2N2219A.Normal")
+      (LibraryName "E:\CADENCE\PSD_14.1\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\PSPICE Libraries")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -34 4 402 4 581"))
+      (Tab 0)))
+  (MPSSessionName "Behrooz"))

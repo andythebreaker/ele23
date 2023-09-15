@@ -1,0 +1,18 @@
+** Profile: "Slew Rate Test-DC Sweep"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 9\chapter 9-Slew Rate Test-DC Sweep.sim ] 
+
+** Creating circuit file "chapter 9-Slew Rate Test-DC Sweep.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vpulse 0 3.3 0.1m 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 9-Slew Rate Test.net" 
+
+
+.END

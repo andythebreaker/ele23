@@ -1,0 +1,3 @@
+* source CHAPTER 3
+X_Z1         0 N205946 ZENER_DIODE 
+V_Vtest         N205946 0 5V

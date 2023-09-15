@@ -1,0 +1,9 @@
+* source CHAPTER 14
+V_Vin         IN 0  
++SIN 0 17.9 1K 0 0 0
+V_+VCC         VCC 0 {VCC}
+V_-VCC         0 -VCC {VCC}
+Q_QP         -VCC IN OUT QMJE253
+R_RL         OUT 0  {RL}  
+Q_QN         VCC IN OUT QMJE243 
+.PARAM  VCC=23 RL=8

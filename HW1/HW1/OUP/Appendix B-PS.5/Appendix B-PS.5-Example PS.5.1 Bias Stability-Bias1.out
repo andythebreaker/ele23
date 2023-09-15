@@ -1,0 +1,202 @@
+
+**** 10/09/09 17:22:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.5.1 Bias Stability-Bias1"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\A
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Appendix B-PS.5-Example PS.5.1 Bias Stability-Bias1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.SENS I(V_Vdrain) 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\Appendix B-PS.5-Example PS.5.1 Bias Stability.net" 
+
+
+
+**** INCLUDING "Appendix B-PS.5-Example PS.5.1 Bias Stability.net" ****
+* source APPENDIX B-PS.5
+R_R2         N182483 N211736  {RD}  
+M_M2         N182483 N182583 N182491 N182491 NMOS0P5  
++ L={L}  
++ W={W}  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M=1
+R_R1         N182583 VDD  {RG1}  
+R_R3         0 N182583  {RG2}  
+V_Vdrain         VDD N211736 0Vdc
+V_V1         VDD 0 {VDD}
+R_R4         0 N182491  {RS}  
+.PARAM  RS=1E-15 VDD=3.3 W=22u RD=4.2K L=0.6u RG1=2E6 RG2=0.88E6
+
+**** RESUMING "Appendix B-PS.5-Example PS.5.1 Bias Stability-Bias1.sim.cir" ****
+.END
+
+**** 10/09/09 17:22:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.5.1 Bias Stability-Bias1"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\A
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOS0P5         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   80.000000E-09 
+         VTO     .7          
+          KP  167.204900E-06 
+       GAMMA     .5          
+         PHI     .8          
+      LAMBDA    1.000000E-03 
+          IS   10.000000E-15 
+          JS   10.000000E-09 
+          PB     .9          
+        PBSW     .9          
+          CJ  570.000000E-06 
+        CJSW  120.000000E-12 
+        MJSW     .4          
+        CGSO  400.000000E-12 
+        CGDO  400.000000E-12 
+        CGBO  380.000000E-12 
+         TOX    9.500000E-09 
+          XJ    0            
+          UO  460            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+**** 10/09/09 17:22:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.5.1 Bias Stability-Bias1"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\A
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    3.3000  (N182483)    1.6282                   (N182491) 398.0E-21    
+
+(N182583)    1.0083                   (N211736)    3.3000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdrain     3.980E-04
+    V_V1        -3.992E-04
+
+    TOTAL POWER DISSIPATION   1.32E-03  WATTS
+
+
+**** 10/09/09 17:22:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.5.1 Bias Stability-Bias1"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\A
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M_M2      
+MODEL        NMOS0P5   
+ID           3.98E-04 
+VGS          1.01E+00 
+VDS          1.63E+00 
+VBS          0.00E+00 
+VTH          7.00E-01 
+VDSAT        3.08E-01 
+Lin0/Sat1   -1.00E+00 
+if          -1.00E+00 
+ir          -1.00E+00 
+TAU         -1.00E+00 
+GM           2.58E-03 
+GDS          3.97E-07 
+GMB          7.22E-04 
+CBD          1.00E-15 
+CBS          1.61E-15 
+CGSOV        8.80E-15 
+CGDOV        8.80E-15 
+CGBOV        1.67E-16 
+CGS          2.35E-14 
+CGD          0.00E+00 
+CGB          0.00E+00 
+**** 10/09/09 17:22:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "Example PS.5.1 Bias Stability-Bias1"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\A
+
+
+ ****     DC SENSITIVITY ANALYSIS          TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+DC SENSITIVITIES OF OUTPUT I(V_Vdrain)
+
+         ELEMENT         ELEMENT         ELEMENT       NORMALIZED
+          NAME            VALUE       SENSITIVITY     SENSITIVITY
+                                      (AMPS/UNIT)  (AMPS/PERCENT)
+
+          R_R2          4.200E+03      -1.579E-10      -6.633E-09
+          R_R1          2.000E+06      -9.025E-10      -1.805E-05
+          R_R3          8.800E+05       2.051E-09       1.805E-05
+          R_R4          1.000E-15      -1.026E-06      -1.026E-23
+          V_Vdrain      0.000E+00      -3.967E-07       0.000E+00
+          V_V1          3.300E+00       7.880E-04       2.600E-05
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .06
+

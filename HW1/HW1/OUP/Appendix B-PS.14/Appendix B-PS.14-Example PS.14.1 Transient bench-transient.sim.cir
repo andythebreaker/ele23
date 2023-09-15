@@ -1,0 +1,19 @@
+** Profile: "Example 11.9 Transient bench-transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 11\chapter 11-Example 11.9 Transient bench-transient.sim ] 
+
+** Creating circuit file "chapter 11-Example 11.9 Transient bench-transient.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 400n 0 30p 
+.STEP PARAM Z0 LIST 50 300 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 11-Example 11.9 Transient bench.net" 
+
+
+.END

@@ -1,0 +1,6 @@
+* source APPENDIX B-PS.2
+V_Vin         INP 0  
++PULSE -1 1 0 1n 1n 20u 40u
+X_U1         INP OUT VCC VEE OUT uA741
+V_VCC         VCC 0 15V
+V_VEE         0 VEE 15V

@@ -1,0 +1,93 @@
+
+**** 10/01/03 19:53:02 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 2.9 Step Resonse-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHA
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "chapter 2-Example 2.9 Step Resonse-Transient.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 140us 0 10n 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 2-Example 2.9 Step Resonse.net" 
+
+
+
+**** INCLUDING "chapter 2-Example 2.9 Step Resonse.net" ****
+* source CHAPTER 2
+R_A1_Rid         N44965 A1_2  {Rid}  
+V_A1_VOS         A1_2 N45053 {VOS}
+E_A1_Ed         A1_N43852 0 A1_2 N44965 {A0d}
+C_A1_Cb         0 A1_B  {Cb}  
+R_A1_Ro         OUT A1_N44070  {Ro}  
+E_A1_Eb         A1_N44070 0 A1_B 0 1
+R_A1_Rb         A1_B A1_N43852  {Rb}  
+R_R1         N44965 0  {R1}  
+R_R2         N44965 OUT  {R2}  
+V_V1         N45053 0  
++PULSE 0 1 0 1n 1n 200u 400u
+.PARAM  R1=1K R2=100K VOS=1e-3 Rid=2e6 Ro=75 ft=1e6 Cb=1e-12 A0d=1e5 Rb=
++ {A0d/(2*3.142*ft*Cb)}
+
+**** RESUMING "chapter 2-Example 2.9 Step Resonse-Transient.sim.cir" ****
+.END
+
+**** 10/01/03 19:53:02 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 2.9 Step Resonse-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHA
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)     .1009  ( A1_2)     .0010  ( A1_B)     .1010  (N44965) 999.0E-06     
+
+(N45053)    0.0000 (A1_N43852)     .1010                 (A1_N44070)     .1010  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_A1_VOS    -5.049E-13
+    V_V1        -5.049E-13
+
+    TOTAL POWER DISSIPATION   5.05E-16  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/01/03 19:53:02 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 2.9 Step Resonse-Transient"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHA
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        2.46
+

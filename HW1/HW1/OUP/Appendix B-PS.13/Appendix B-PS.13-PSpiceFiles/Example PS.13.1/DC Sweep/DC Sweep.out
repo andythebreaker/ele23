@@ -1,0 +1,146 @@
+
+**** 10/01/03 22:01:24 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 10.5-DC Sweep"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 10\chapt
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "chapter 10-Example 10.5-DC Sweep.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "..\sedra_lib.lib" 
+* From [PSPICE NETLIST] section of e:\cadence\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vin 0 3.3 1m 
+.STEP PARAM MP LIST 1 4 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\chapter 10-Example 10.5.net" 
+
+
+
+**** INCLUDING "chapter 10-Example 10.5.net" ****
+* source CHAPTER 10
+M_M1         OUT IN VDD VDD PMOS0P5  
++ L=0.5u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={MP}
+C_C10         0 OUT  {CL}  
+V_Vsupply         VDD 0 {VDD}
+V_Vin         IN 0  
++PULSE 0 {VDD} 2n 1p 1p 6n 12n
+M_M2         OUT IN 0 0 NMOS0P5  
++ L=0.5u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={MN}
+.PARAM  VDD=3.3 MN=1 MP=1 CL=0.5p
+
+**** RESUMING "chapter 10-Example 10.5-DC Sweep.sim.cir" ****
+.END
+
+WARNING -- LAMBDA for MOSFET model PMOS0P5 is unusually
+           large and might cause nonconvergence
+
+**** 10/01/03 22:01:24 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 10.5-DC Sweep"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 10\chapt
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               PMOS0P5         NMOS0P5         
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+          LD   90.000000E-09   80.000000E-09 
+         VTO    -.8              .7          
+          KP   41.801210E-06  167.204900E-06 
+       GAMMA     .45             .5          
+         PHI     .8              .8          
+      LAMBDA     .2             1.000000E-03 
+          IS   10.000000E-15   10.000000E-15 
+          JS    5.000000E-09   10.000000E-09 
+          PB     .9              .9          
+        PBSW     .9              .9          
+          CJ  930.000000E-06  570.000000E-06 
+        CJSW  170.000000E-12  120.000000E-12 
+        MJSW     .35             .4          
+        CGSO  350.000000E-12  400.000000E-12 
+        CGDO  350.000000E-12  400.000000E-12 
+        CGBO  380.000000E-12  380.000000E-12 
+         TOX    9.500000E-09    9.500000E-09 
+          XJ    0               0            
+          UO  115             460            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    0               0            
+       XPART    0               0            
+
+
+WARNING -- LAMBDA for MOSFET model PMOS0P5 is unusually
+           large and might cause nonconvergence
+
+WARNING -- LAMBDA for MOSFET model PMOS0P5 is unusually
+           large and might cause nonconvergence
+
+WARNING -- LAMBDA for MOSFET model PMOS0P5 is unusually
+           large and might cause nonconvergence
+
+WARNING -- LAMBDA for MOSFET model PMOS0P5 is unusually
+           large and might cause nonconvergence
+
+WARNING -- LAMBDA for MOSFET model PMOS0P5 is unusually
+           large and might cause nonconvergence
+
+WARNING -- LAMBDA for MOSFET model PMOS0P5 is unusually
+           large and might cause nonconvergence
+
+WARNING -- LAMBDA for MOSFET model PMOS0P5 is unusually
+           large and might cause nonconvergence
+
+
+          JOB CONCLUDED
+
+**** 10/01/03 22:01:24 ******* PSpice 9.2.3WU (Sep 2002) ****** ID# 1111111111 
+ ** Profile: "Example 10.5-DC Sweep"  [ C:\Documents and Settings\Adel Sedra\My Documents\SEDRA WORK\SEDRA-PSPICE-CD\CHAPTER 10\chapt
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM MP =    4     
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .95
+

@@ -1,0 +1,22 @@
+* source CHAPTER 4
+R_R16         0 N178098  {RS}  
+C_C6         0 N178098  {CS}  
+V_V3         IN 0 DC 0Vdc AC 1Vac 
+R_R12         N178004 VDD  {RD}  
+C_C5         N177899 N177754  {CCI}  
+R_R11         N177754 VDD  {RG1}  
+R_R15         0 N177754  {RG2}  
+C_C4         N178004 OUT  {CCO}  
+R_R13         0 OUT  {RL}  
+V_V1         VDD 0 {VDD}
+R_R14         IN N177899  {Rsig}  
+M_M2         N178004 N177754 N178098 N178098 NMOS0P5  
++ L={L}  
++ W={W}  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M=1
+.PARAM  RS=630 VDD=3.3 W=22u RD=4.2K CCI=10u L=0.6u RG1=2E6 RG2=1.3E6 RL=50K
++  CCO=10u Rsig=10K CS=10u

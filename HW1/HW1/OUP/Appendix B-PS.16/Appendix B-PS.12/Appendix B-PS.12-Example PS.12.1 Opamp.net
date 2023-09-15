@@ -1,0 +1,76 @@
+* source CHAPTER 9
+C_CL         0 OUT  {Cload}  
+M_M1         N00885 INN N00766 N00766 PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M1}
+V_Vd         D 0 DC 0Vdc AC 1Vac 
+M_M7         OUT N01450 VDD VDD PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M7}
+E_Ep         INP N73627 D 0 0.5
+C_Cc         N82248 OUT  {Cc}  
+M_M4         A N00885 0 0 NMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={M4}
+E_En         N73627 INN D 0 0.5
+M_M2         A INP N00766 N00766 PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M2}
+M_M3         N00885 N00885 0 0 NMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={M3}
+R_R         A N82248  {R}  
+I_Iref         N01450 0 DC {Iref}  
+V_VCM         N73627 0 {VCM}
+V_VCC         VDD 0 {VDD}
+M_M6         OUT A 0 0 NMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={M6}
+M_M5         N00766 N01450 VDD VDD PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M5}
+M_M8         N01450 N01450 VDD VDD PMOS0P5  
++ L=0.6u  
++ W=1.25u  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25e-6  
++ PS=5.25E-6      
++ M={M8}
+.PARAM  VDD=3.3 Cload=1p M1=8 M2=8 M3=2 Iref=90u M4=2 M5=16 M6=4 VCM=1.65 M7=16
++  M8=16 R=1.53K Cc=0.6p

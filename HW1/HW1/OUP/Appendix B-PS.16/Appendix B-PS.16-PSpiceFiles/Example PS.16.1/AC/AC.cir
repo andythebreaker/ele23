@@ -1,0 +1,18 @@
+** Profile: "Example PS.16.1-AC"  [ C:\Documents and Settings\Administrator\My Documents\SPICE Examples Converted\Appendix B-PS.16\appendix b-ps.16-example ps.16.1-ac.sim ] 
+
+** Creating circuit file "appendix b-ps.16-example ps.16.1-ac.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB "C:/Users/Behrooz/Desktop/SPICE Examples - Orcad New Version/sedra_lib.lib"
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 1000 1m 20K
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "../Example PS.16.1.net"
+
+
+.END

@@ -1,0 +1,179 @@
+
+**** 10/10/09 10:45:27 ****** PSpice 16.0.0 (August 2007) ***** ID# 0 ********
+
+ ** Profile: "Example PS.9.1-DC Sweep"  [ C:\Users\Behrooz\Desktop\SPICE Examples\Appendix B-PS.9\appendix b-ps.9-example ps.9.1-dc s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Appendix B-PS.9-Example PS.9.1-DC Sweep.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../sedra_lib.lib" 
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_16.0\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_Vin 1 2.5 0.1m 
+.STEP PARAM W LIST 10.65u 12.5u 14.37u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\Appendix B-PS.9-Example PS.9.1.net" 
+
+
+
+**** INCLUDING "Appendix B-PS.9-Example PS.9.1.net" ****
+* source APPENDIX B-PS.9
+M_M3         N236360 N236360 VDD VDD PMOS5P0  
++ L=6u  
++ W=37.5u  
++ AD=1.72E-10  
++ AS=1.72E-10  
++ PD=5.25e-5  
++ PS=5.25E-5      
++ M={M}
+V_Vin         IN 0 DC 1.5Vdc AC 1Vac 
+M_M1         OUT IN 0 0 NMOS5P0  
++ L=6u  
++ W={W}  
++ AD=1.72E-12  
++ AS=1.72E-12  
++ PD=5.25E-6  
++ PS=5.25E-6      
++ M={M1}
+I_I2         N236360 0 DC {Iref}  
+M_M2         OUT N236360 VDD VDD PMOS5P0  
++ L=6u  
++ W=37.5u  
++ AD=1.72E-10  
++ AS=1.72E-10  
++ PD=5.25e-5  
++ PS=5.25E-5      
++ M={M}
+V_V2         VDD 0 {VDD}
+.PARAM  w=12.5u m=2 m1=10 iref=100u vdd=10
+
+
+** Wrapper definitions for AA legacy support **
+
+
+.model PMOS5P0 pmos
+
++ vto=-1
++ gamma=0.65
++ phi=0.65
++ ld=6e-007
++ wd=0
++ uo=250
++ lambda=0.03
++ tox=8.5e-008
++ pb=0.7
++ cj=0.00018
++ cjsw=6e-010
++ mj=0.5
++ mjsw=0.5
++ cgdo=4e-010
++ js=1e-006
++ cgbo=2e-010
++ cgso=4e-010
+
+
+.model NMOS5P0 nmos
+
++ vto=1
++ gamma=1.4
++ phi=0.7
++ ld=7e-007
++ wd=0
++ uo=750
++ lambda=0.01
++ tox=8.5e-008
++ pb=0.7
++ cj=0.0004
++ cjsw=8e-010
++ mj=0.5
++ mjsw=0.5
++ cgdo=4e-010
++ js=1e-006
++ cgbo=2e-010
++ cgso=4e-010
+
+
+**** RESUMING "Appendix B-PS.9-Example PS.9.1-DC Sweep.sim.cir" ****
+.END
+
+**** 10/10/09 10:45:27 ****** PSpice 16.0.0 (August 2007) ***** ID# 0 ********
+
+ ** Profile: "Example PS.9.1-DC Sweep"  [ C:\Users\Behrooz\Desktop\SPICE Examples\Appendix B-PS.9\appendix b-ps.9-example ps.9.1-dc s
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               PMOS5P0         NMOS5P0         
+               PMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+          LD  600.000000E-09  700.000000E-09 
+         VTO   -1               1            
+          KP   10.156300E-06   30.468910E-06 
+       GAMMA     .65            1.4          
+         PHI     .65             .7          
+      LAMBDA     .03             .01         
+          IS   10.000000E-15   10.000000E-15 
+          JS    1.000000E-06    1.000000E-06 
+          PB     .7              .7          
+        PBSW     .7              .7          
+          CJ  180.000000E-06  400.000000E-06 
+        CJSW  600.000000E-12  800.000000E-12 
+        MJSW     .5              .5          
+        CGSO  400.000000E-12  400.000000E-12 
+        CGDO  400.000000E-12  400.000000E-12 
+        CGBO  200.000000E-12  200.000000E-12 
+         TOX   85.000000E-09   85.000000E-09 
+          XJ    0               0            
+          UO  250             750            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    0               0            
+       XPART    0               0            
+
+
+
+          JOB CONCLUDED
+
+**** 10/10/09 10:45:27 ****** PSpice 16.0.0 (August 2007) ***** ID# 0 ********
+
+ ** Profile: "Example PS.9.1-DC Sweep"  [ C:\Users\Behrooz\Desktop\SPICE Examples\Appendix B-PS.9\appendix b-ps.9-example ps.9.1-dc s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM W =   14.3700E-06
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        7.85
+

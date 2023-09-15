@@ -1,0 +1,63 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("VDC")
+        ("PARAM")
+    )
+    ("instances"
+        ("V9"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V9")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("V10"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V10")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1.1")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("V8"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V8")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"3.3")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("V11"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V11")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"1.2")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("PARAM"
+            ("device_name"	"PARAM")
+            ("pspice_path"	"")
+            ("level"	"0")
+            ("model_params"
+                ("W"
+                    ("value"	"1u")
+                    ("pspice_param"	"W")
+                )
+            )
+        )
+    )
+)
