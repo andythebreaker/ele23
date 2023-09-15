@@ -1,5 +1,5 @@
-
-**** 09/15/23 11:40:27 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+**** 09/15/23 11:48:03 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -83,23 +83,15 @@ M_M4         VO N00411 0 N00580 NMOS0P5
 + PS=5.25E-6      
 + M=1
 C_CL         0 VO  1p  TC=0,0 
-V_Vin+         N01229 0 DC 1.65Vdc AC 1Vac 
-V_Vin-         N01180 0 DC 1.65Vdc AC -1Vac 
+V_Vin+         N01229 0 DC 1.65Vdc AC 0.5749020786Vac 
+V_Vin-         N01180 0 DC 1.65Vdc AC -0.5749020786Vac 
 
 **** RESUMING HW1_1_AC.cir ****
 .END
 
-WARNING(ORPSIM-15223): Library file "C:\Program Files (x86)\OUP\sedra_lib.lib" has changed since index file sedra_lib.ind was created.
-
-WARNING(ORPSIM-15227): The timestamp changed from Tue Oct 08 10:04:04 2019 to Thu Aug 24 09:15:10 2023.
-
-INFO(ORPSIM-15422): Making new index file sedra_lib.ind for library file sedra_lib.lib.
-
-Index has 13 entries from 1 file(s).
-
 WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and might cause non-convergence
 
-**** 09/15/23 11:40:27 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/15/23 11:48:03 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -149,7 +141,7 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
 
 WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and might cause non-convergence
 
-**** 09/15/23 11:40:27 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/15/23 11:48:03 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -186,7 +178,7 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
 
           JOB CONCLUDED
 
-**** 09/15/23 11:40:27 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/15/23 11:48:03 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -198,5 +190,5 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
 
 
 
-  Total job time (using Solver 1)   =         .30
+  Total job time (using Solver 1)   =         .02
 

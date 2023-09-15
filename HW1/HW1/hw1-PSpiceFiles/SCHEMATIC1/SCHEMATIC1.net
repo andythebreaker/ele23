@@ -50,5 +50,5 @@ M_M4         VO N00411 0 N00580 NMOS0P5
 + PS=5.25E-6      
 + M=1
 C_CL         0 VO  1p  TC=0,0 
-V_Vin+         N01229 0 DC 1.65Vdc AC 1Vac 
-V_Vin-         N01180 0 DC 1.65Vdc AC -1Vac 
+V_Vin+         N01229 0 DC 1.65Vdc AC 0.5749020786Vac 
+V_Vin-         N01180 0 DC 1.65Vdc AC -0.5749020786Vac 
