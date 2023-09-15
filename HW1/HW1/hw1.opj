@@ -78,7 +78,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 1688 52 511")
-        (Scroll "100 0")
+        (Scroll "0 260")
         (Zoom "198")
         (Occurrence "/"))
       (Path "G:\ANDY\23ME\HW1\HW1\HW1\HW1.DSN")

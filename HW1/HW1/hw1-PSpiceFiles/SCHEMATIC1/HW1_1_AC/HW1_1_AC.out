@@ -1,5 +1,5 @@
-
-**** 09/15/23 12:42:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+**** 09/15/23 14:28:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -23,7 +23,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.AC DEC 10 1k 1G
+.AC DEC 10 1 1G
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -91,7 +91,7 @@ V_Vin-         N01180 0 DC 1.65Vdc AC -0.5749020786Vac
 
 WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and might cause non-convergence
 
-**** 09/15/23 12:42:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/15/23 14:28:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -141,7 +141,7 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
 
 WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and might cause non-convergence
 
-**** 09/15/23 12:42:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/15/23 14:28:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -178,7 +178,7 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
 
           JOB CONCLUDED
 
-**** 09/15/23 12:42:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 09/15/23 14:28:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-HW1_1_AC"  [ g:\andy\23me\hw1\hw1\hw1\hw1-pspicefiles\schematic1\hw1_1_ac.sim ] 
 
@@ -190,5 +190,5 @@ WARNING(ORPSIM-15676): LAMBDA for MOSFET model PMOS0P5 is unusually large and mi
 
 
 
-  Total job time (using Solver 1)   =         .02
+  Total job time (using Solver 1)   =         .25
 
