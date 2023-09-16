@@ -9,7 +9,7 @@ M_M1         N00411 N01229 N00662 N00662 PMOS0P5
 + PD=5.25e-6  
 + PS=5.25E-6      
 + M=1
-M_M2         VO N06387 N00662 N00662 PMOS0P5  
+M_M2         N00607 N07572 N00662 N00662 PMOS0P5  
 + L=0.5u  
 + W=12u  
 + AD=1.72E-12  
@@ -41,7 +41,7 @@ M_M3         N00411 N00411 0 0 NMOS0P5
 + PD=5.25E-6  
 + PS=5.25E-6      
 + M=1
-M_M4         VO N00411 0 0 NMOS0P5  
+M_M4         N00607 N00411 0 0 NMOS0P5  
 + L=0.5u  
 + W=5u  
 + AD=1.72E-12  
@@ -49,8 +49,9 @@ M_M4         VO N00411 0 0 NMOS0P5
 + PD=5.25E-6  
 + PS=5.25E-6      
 + M=1
-C_CL         0 VO  1p  TC=0,0 
-V_Vin+         N01229 0 DC 1.65Vdc AC 1Vac 
-R_R1         N06387 0  175k TC=0,0 
-R_R2         N06387 VO  25k TC=0,0 
-R_RL         0 VO  200k TC=0,0 
+C_CL         0 N00607  1p  TC=0,0 
+V_Vin+         N01229 0 DC 1.65Vdc AC 0Vac 
+R_R1         VO 0  175k TC=0,0 
+R_R2         VO N00607  25k TC=0,0 
+R_RL         0 N00607  200k TC=0,0 
+V_VT         N07572 0 DC 1.65Vdc AC 1Vac 
